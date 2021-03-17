@@ -1,8 +1,0 @@
-name: PR
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches: [main]
-    types: [opened, synchronize]
