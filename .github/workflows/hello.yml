@@ -15,4 +15,4 @@ jobs:
       - name: Print date
         run: echo $TAG_NAME
         env:
-          TAG_NAME: { steps.date.outputs.date }
+          TAG_NAME: Fecha-${{ steps.date.outputs.date }}
