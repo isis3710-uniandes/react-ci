@@ -14,4 +14,9 @@ jobs:
           echo "Hello ISIS3710"
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: /
+          echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Test data
+        run: echo $TAG_NAME
+        env:
+        TAG_NAME: ${{ steps.date.outputs.date }}
