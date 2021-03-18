@@ -9,14 +9,11 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-18.04
     steps:
-      - name: Say hello
-        run: |
-          echo "Hello ISIS3710"
       - name: Get current date
         id: date
-        run: /
-          echo "::set-output name=date::$(date +'%Y-%m-%d')"
-      - name: Test data
-        run: echo $TAG_NAME
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Test with environment variables
+        run: echo $TAG_NAME - $RELEASE_NAME
         env:
-        TAG_NAME: ${{ steps.date.outputs.date }}
+          TAG_NAME: nightly-tag-${{ steps.date.outputs.date }}
+          RELEASE_NAME: nightly-release-${{ steps.date.outputs.date }}
