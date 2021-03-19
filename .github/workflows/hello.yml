@@ -16,5 +16,5 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Say date
-        run: echo -${{ steps.date.outputs.date }}
+        run: echo - steps.date.outputs.date
           
