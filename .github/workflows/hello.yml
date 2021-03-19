@@ -12,3 +12,6 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello ISIS3710"
+      - name : Get date
+        run: |
+          date "+%H:%M:%S   %d/%m/%y"
