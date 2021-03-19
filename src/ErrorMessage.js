@@ -6,11 +6,11 @@ const ErrorMessage = ({ error }) => (
 );
 
 ErrorMessage.PropTypes = {
-  error: PropTypes.any.isRequired
+  error: PropTypes.any.isRequired,
 };
 
 ErrorMessage.defaultProps = {
-  error: {}
+  error: {},
 };
 
 export default ErrorMessage;
