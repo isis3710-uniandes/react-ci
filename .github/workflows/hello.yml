@@ -12,3 +12,9 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello ISIS3710"
+  date_server_job:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Say date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+          
