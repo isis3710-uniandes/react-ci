@@ -1,3 +1,7 @@
+Daniel Esteban Lozano
+201730679
+de.lozanoe@uniandes.edu.co
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
